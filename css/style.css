@@ -6,6 +6,7 @@
     --carbon: #212121;
     --borderGrey: #AFB1B8;
     --footerIconBG: rgba(255, 255, 255, 0.1);
+    --portfolioItemBg: #EEEEEE;
     --main-font: 'Roboto', sans-serif;
 }
 
@@ -13,6 +14,7 @@
     margin: 0;
     padding: 0;
 }
+
 
 body a, a:visited {
     text-decoration: none;
@@ -28,7 +30,6 @@ body {
     margin: 0px auto;
 
 }
-
 
 
 .link:hover, .link:focus {
@@ -111,9 +112,29 @@ body {
 }
 
 .contact-list-link {
-    margin-left: 50px;
+    margin-left: 30px;
+   
 }
-
+.contact-icon{
+    margin-right: 10px;
+}
+.envelope{
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+   fill: currentColor;
+}
+.smartphone{
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    vertical-align:text-top;
+    fill: currentColor;
+    }
+.contact-list-item:hover{
+    color: var(--blue);
+    fill: var(--blue);
+}
 /* =======-END HEADER-======= */
 
 
@@ -121,7 +142,9 @@ body {
 /* =======-HERO-======= */
 .hero-conteiner {
     background-color: var(--darkGrey);
-    background-image: url("../images/hero.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    object-fit:contain;
+    background-repeat: no-repeat;
     padding: 200px 452px;
     align-content: center;
 
@@ -384,7 +407,7 @@ body {
     margin: 12px 70px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1, 143;
+    line-height: 1.143;
     letter-spacing: 0.03em;
 }
 
@@ -392,7 +415,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin:auto 70px;
+    margin: auto 70px;
 
 }
 
@@ -452,13 +475,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  
 }
 
 .portfolio-item {
-    margin: 15px 0px 15px 15px;
-    flex-basis: calc(100% / 3 - 15px);
+    margin-bottom: 30px;
+    
 }
+.portfolio-item:hover, .portfolio-item:focus{
 
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
 .portfolio-images {
     display: block;
 
@@ -471,8 +500,8 @@ body {
     letter-spacing: 0.06em;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
-    margin-right: 15px;
     padding: 20px 24px;
+    width: 370px;
 }
 
 .portfolio-description {

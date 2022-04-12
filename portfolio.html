@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-          rel="stylesheet">
-        <title>WebStudio</title>
-      </head>
-      
-      <body>
-        <header class="page-header ">
-          <a class="logo" href="index.html"><span class="logo-element">Web</span>Studio</a>
-          <nav class="navigation">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>WebStudio</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <a class="logo" href="index.html"><span class="logo-element">Web</span>Studio</a>
+        <nav class="navigation">
             <ul class="navigation-list list">
-              <li class="navigation-list-item inline-list"><a class="navigation-list-link link" href="index.html">Agencja</a>
-              </li>
-              <li class="navigation-list-item  inline-list"><a class="navigation-list-link link"
-                  href="portfolio.html">Portfolio</a></li>
-              <li class="navigation-list-item  inline-list"><a class="navigation-list-link link" href="#footer">Kontakt</a>
-              </li>
+                <li class="navigation-list-item inline-list"><a class="navigation-list-link link"
+                        href="index.html">Agencja</a>
+                </li>
+                <li class="navigation-list-item  inline-list"><a class="navigation-list-link link"
+                        href="portfolio.html">Portfolio</a></li>
+                <li class="navigation-list-item  inline-list"><a class="navigation-list-link link"
+                        href="#footer">Kontakt</a>
+                </li>
             </ul>
-          </nav>
-      
-          <ul class="contact list">
-            <li class="contact-list-item  inline-list"> <a class="contact-list-link link"
-                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="contact-list-item  inline-list"> <a class="contact-list-link link" href="tel:48111111111">+48-111-111-111</a>
+        </nav>
+
+        <ul class="contact list">
+            <li class="contact-list-item  inline-list">
+                <a class="contact-list-link link" href="mailto:info@devstudio.com"> <svg class="contact-icon envelope">
+                        <use href="./images/sprite.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a>
             </li>
-          </ul>
-        </header>
+            <li class="contact-list-item  inline-list">
+                <a class="contact-list-link link" href="tel:48111111111"> <svg class="contact-icon smartphone">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>+48-111-111-111</a>
+            </li>
+        </ul>
+    </header>
 
     <main>
         <section class="section container">
@@ -138,24 +148,51 @@
 
 
     <footer class="page-footer">
-        <div class="container">
-          <a class="logo" href="index.html"><span class="logo-element">Web</span><span class="logo-footer">Studio</span></a>
-    
-          <address class="address">
-            m. Warszawa, Aleje Jerozolimskie 21<br />
-            <ul class="contact list footer-contact ">
-              <li class="contact-list-item footer-contact-list-item"> <a
-                  class="contact-list-link link footer-contact-list-link"
-                  href=" mailto:info@devstudio.com">info@devstudio.com</a></li>
-              <li class="contact-list-item footer-contact-list-item"> <a
-                  class="contact-list-link link footer-contact-list-link" href="tel:48111111111">+48-111-111-111</a>
-              </li>
-            </ul>
-    
-          </address>
+        <div class="footer-container container">
+            <div class="footer-left-side">
+                <a class="logo" href="index.html"><span class="logo-element">Web</span><span
+                        class="logo-footer">Studio</span></a>
+
+                <address class="address">
+                    m. Warszawa, Aleje Jerozolimskie 21<br />
+                    <ul class="contact list footer-contact ">
+                        <li class="contact-list-item footer-contact-list-item"> <a
+                                class="contact-list-link link footer-contact-list-link"
+                                href=" mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="contact-list-item footer-contact-list-item"> <a
+                                class="contact-list-link link footer-contact-list-link"
+                                href="tel:48111111111">+48-111-111-111</a>
+                        </li>
+                    </ul>
+
+                </address>
+            </div>
+            <div class="footer-center">
+                <h3 class="footer-join-us">Dołącz do nas</h3>
+                <ul class="footer-social-list">
+                    <li class="footer-social-list-item list"><a href="#" class="footer-social-list-link"><svg
+                                class="footer-social-list-icon">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg></a>
+                    </li>
+                    <li class="footer-social-list-item list"><a href="#" class="footer-social-list-link"><svg
+                                class="footer-social-list-icon">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg></a>
+                    </li>
+                    <li class="footer-social-list-item list"><a href="#" class="footer-social-list-link"><svg
+                                class="footer-social-list-icon">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg></a>
+                    </li>
+                    <li class="footer-social-list-item list"><a href="#" class="footer-social-list-link"><svg
+                                class="footer-social-list-icon">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
         </div>
-      </footer>
-    </body>
-    
-    </html>
-    
+    </footer>
+</body>
+
+</html>
