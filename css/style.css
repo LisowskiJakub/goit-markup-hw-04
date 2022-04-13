@@ -140,13 +140,16 @@ body {
 
 
 /* =======-HERO-======= */
-.hero-conteiner {
-    background-color: var(--darkGrey);
+.hero-container {
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
     object-fit:contain;
     background-repeat: no-repeat;
-    padding: 200px 452px;
-    align-content: center;
+    padding: 200px;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
 
 }
 
